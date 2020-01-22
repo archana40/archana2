@@ -1,0 +1,46 @@
+go to windows powershell
+ 
+
+set-executionpolicy remotesigned
+
+customId
+
+
+ // let xy = new client({
+        //     ...clients._doc
+        // });
+
+        // const filter = {_id:clients._doc._id};
+        // const update = {clientId:'TY_' + clients._doc.clientShortName + '_'+clients._doc._id};
+        // client.findOneAndUpdate(filter,update).then((clients) =>{
+        //     console.log('Updated clients data', clients)
+        // });
+
+
+
+
+//code for count of the data
+ // this.count.map(item=>{
+      //   console.log('item',item[1]);
+      //   if(item[1]._id.stack === 'Java Full Stack'){
+      //     this.javaEmpCount=item[1].count;
+      //   }
+      //   else if(item[1]._id.stack === 'MEAN Stack'){
+      //    this.meanEmpCount=item[1].count;
+      //  }
+      //  else if(item[1]._id.stack === 'Dot Net'){
+      //    this.DotNetEmpCount=item[1].count;
+      //  }
+      // else  if(item[1]._id.stack === 'Data science'){
+      //    this.DatascienceEmpCount=item[1].count;
+      //  }
+      // })
+      // console.log(billablesCount[0][1], 'hhhhhhhhhh')
+
+      // console.log(this.meanEmpCount, 'jhgjhfgjhfgjhf')
+
+
+
+
+User ID : TYC071947
+Password : 0hyjq 
