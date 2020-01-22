@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button type="button" class="float-right ty-download"><i class="fa fa-download" aria-hidden="true"></i></button>
+    <button type="submit" class="float-right ty-print"><i class="fas fa-print"></i></button> -->
+    <div class="container col-md-10 offset-1">
+        <div class="mt-4">
+            <h3 class="ty-heading">Client Details</h3>
+            <table class="table table-hover table-bordered">
+                <thead class="text-white ty-header">
+                    <tr>
+                        <td>clientId</td>
+                        <td>clientName</td>
+                        <td>clientShortName</td>
+                        <td>Department</td>
+                        <td>PhoneNo</td>
+                        <td>Email</td>
+                        <td>companyWebsite</td>
+                        <td>companyLogo</td>
+                        <td>streetAddress</td>
+                        <td>addressLine</td>
+                        <td>city</td>
+                        <td>state</td>
+                        <td>country</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of clientsDetail" (click)="printSelectedRow(data)">
+                        <td>{{data.clientId}}</td>
+                        <td>{{data.clientName}}</td>
+                        <td>{{data.clientShortName}}</td>
+                        <td>{{data.department}}</td>
+                        <td>{{data.clientNo}}</td>
+                        <td>{{data.clientEmail}}</td>
+                        <td>{{data.companyWebsite}}</td>
+                        <td>{{data.companyLogo}}</td>
+                        <td>{{data.streetAddress}}</td>
+                        <td>{{data.addressLine}}</td>
+                        <td>{{data.city}}</td>
+                        <td>{{data.state}}</td>
+                        <td>{{data.country}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class=" mt-4 mb-4" id="ty-pagination">
+        <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+    </div>
+    </body>
+</html>
