@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://ThanushreeCU.github.io/TY_TechElevate_TrainingMaintenance_Thanushree/ty-styles-table.css">
+    <link rel="stylesheet" type="text/css" href="https://ThanushreeCU.github.io/TY_TechElevate_TrainingMaintenance_Thanushree/ty-styles-form.css">
+</head>
+
+<body>
+    <div class="container col-md-10 offset-1">
+        <div class="mt-4">
+            <h3 class="ty-heading">Billable Employees Info</h3>
+            <table class="table table-hover table-bordered">
+                <thead class="text-white ty-header">
+                    <tr>
+                        <td>clientName</td>
+                        <td>empName</td>
+                        <td>Date Of Deployment</td>
+                        <td>Contract End Date </td>
+                        <td>Ratecard</td>
+                        <td>Stack</td>
+                        <td>Year Of Experience</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let billableEmployeesDetails of billableEmployeesDetails">
+                        <td>{{billableEmployeesDetails.clientName}}</td>
+                        <td>{{billableEmployeesDetails.empName}}</td>
+                        <td>{{billableEmployeesDetails.dateOfDeployment}}</td>
+                        <td>{{billableEmployeesDetails.contractEndDate}}</td>
+                        <td>{{billableEmployeesDetails.rateCard}}</td>
+                        <td>{{billableEmployeesDetails.stack}}</td>
+                        <td>{{billableEmployeesDetails.yearOfExperience}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class=" mt-4 mb-4 " id="ty-pagination">
+        <jw-pagination [items]="items " (changePage)="onChangePage($event) "></jw-pagination>
+    </div>
+</body>
+
+</html>
